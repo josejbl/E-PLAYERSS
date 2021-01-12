@@ -34,3 +34,4 @@ C:\Users\fic\Desktop\EPLAYERS_ASPNETCORE\obj\Debug\netcoreapp3.1\EPLAYERS_ASPNET
 C:\Users\fic\Desktop\EPLAYERS_ASPNETCORE\obj\Debug\netcoreapp3.1\EPLAYERS_ASPNETCORE.pdb
 C:\Users\fic\Desktop\EPLAYERS_ASPNETCORE\obj\Debug\netcoreapp3.1\EPLAYERS_ASPNETCORE.genruntimeconfig.cache
 C:\Users\fic\Desktop\EPLAYERS_ASPNETCORE\obj\Debug\netcoreapp3.1\EPLAYERS_ASPNETCORE.csproj.CopyComplete
+C:\Users\fic\Desktop\EPLAYERS_ASPNETCORE\obj\Debug\netcoreapp3.1\Razor\Views\Equipe\Index.cshtml.g.cs

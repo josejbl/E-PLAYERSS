@@ -51,7 +51,7 @@ namespace EPLAYERS_ASPNETCORE.Models
            RewriteCSV(PATH, linhas);
 
         }
-        public List<Equipe> ReadA11()
+        public List<Equipe> ReadAll()
 
         {
            List<Equipe> equipes = new List<Equipe>();
@@ -96,11 +96,6 @@ namespace EPLAYERS_ASPNETCORE.Models
 
 
 
-        }
-
-        public void Creat(Equipe e)
-        {
-            throw new System.NotImplementedException();
         }
     }
 }
