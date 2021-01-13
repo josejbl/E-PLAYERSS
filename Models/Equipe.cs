@@ -31,26 +31,10 @@ namespace EPLAYERS_ASPNETCORE.Models
             //Preparamos um array de string para o mátodo AppendAllLines
             string[] linhas = {Prepare(e) };
             //Acrescentamos a nova linha
-            File.AppendAllLines(PATH, linhas );
+            File.AppendAllLines(PATH, linhas);
         }
-
-        public void Delete(int id)
-        {
-            
-
-           List<string> linhas = ReadAllLinesCSV(PATH);
-
-           //2;SNK.Jpg
-           //Removemos as linhas com o código comparado
-           linhas.RemoveAll(x => x.Split(";")[0] == id.ToString());
-
 
         
-           //Reescrever o CSV com a lista a Alteradas
-
-           RewriteCSV(PATH, linhas);
-
-        }
         public List<Equipe> ReadAll()
 
         {
@@ -85,18 +69,19 @@ namespace EPLAYERS_ASPNETCORE.Models
            //2;SNK.Jpg
            //Removemos as linhas com o código comparado
            linhas.RemoveAll(x => x.Split(";")[0] == e.IdEquipe.ToString());
-
-
-           //Adicionamos na lista a equip altera
-           linhas.Add( Prepare(e));
-
-           //Reescrever o CSV com a lista a Alteradas
-
+           linhas.Add( Prepare(e) );
            RewriteCSV(PATH, linhas);
-
-
+        }
+        public void Delete(int id)
+        {
+            List<string> linhas = ReadAllLinesCSV(PATH);
+            linhas.RemoveAll(x => x.Split(";")[0] == id.ToString());
+            RewriteCSV(PATH, linhas);
 
         }
+
+           
+
     }
 }
 
