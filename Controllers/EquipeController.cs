@@ -73,7 +73,7 @@ namespace EPLAYERS_ASPNETCORE.Controllers
         }
 
         [Route("{id}")]
-        public IActionResult Escluir(int id)
+        public IActionResult Excluir(int id)
         {
             equipeModel.Delete(id);
             ViewBag.Equipes = equipeModel.ReadAll();
