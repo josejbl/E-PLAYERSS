@@ -12,9 +12,11 @@ namespace E_PLAYERSS.Controllers
     [Route("Jogador")]
     public class JogadorController : Controller
     {
-        Jogador jogadorModel = new Jogador();
+        Jogador jogadorModel  = new Jogador();
+        Equipe equipeModel    = new Equipe();
         public IActionResult Index()
         {
+            ViewBag.Equipes   = equipeModel.ReadAll();
             ViewBag.Jogadores = jogadorModel.ReadAll();
             
             return View();

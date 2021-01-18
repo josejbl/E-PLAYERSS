@@ -12,10 +12,15 @@ namespace EPLAYERS_ASPNETCORE.Models
         
         public string Email { get; set; }
         public string Senha { get; set; }
+        
 
+        private const string PATH = "Database/Jogador.csv";
+        public Jogador()
+        {
+            CreateFolderAndFile(PATH);
+        }
 
-            private const string PATH = "Database/Jogador.csv";
-  /// <summary>
+        /// <summary>
         /// Adiciona uma Jogador ao CSV
         /// </summary>
         /// <param name="j">Jogador</param>
