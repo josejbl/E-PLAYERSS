@@ -14,7 +14,7 @@ namespace EPLAYERS_ASPNETCORE.Models
         public string Senha { get; set; }
         
 
-        private const string PATH = "Database/Jogador.csv";
+        public  string PATH = "Database/Jogador.csv";
         public Jogador()
         {
             CreateFolderAndFile(PATH);

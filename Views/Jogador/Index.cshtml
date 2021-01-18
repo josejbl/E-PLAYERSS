@@ -17,12 +17,13 @@
 
     <div class="campo">
         <label>ID Equipe</label>
-        <select name="Idequipe" id=""></select>
+        <select name="IdEquipe" id="IdEquipe">
             <option value="0">selecione uma opção...</option>
             @foreach (var item in ViewBag.Equipes)
             {
                 <option value="@item.IdEquipe">@item.Nome</option>
             }
+        </select>
     </div>
 
     <div class="campo">
