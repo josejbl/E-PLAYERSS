@@ -47,8 +47,8 @@ namespace E_PLAYERSS.Controllers
             Mensagem = "Dados incorretos, tente novamente...";
             return LocalRedirect("~/Login");
         }
-        [Route("Logolt")]
-        public ActionResult Logolt()
+        [Route("Logout")]
+        public ActionResult Logout()
         {
             HttpContext.Session.Remove("_UserName");
             return LocalRedirect("~/");
